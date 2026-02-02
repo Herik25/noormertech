@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -26,10 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.variable} ${dancingScript.variable} antialiased font-sans`}
+        className={`${montserrat.variable} ${dancingScript.variable} antialiased font-sans flex flex-col min-h-screen`}
       >
         <Header />
-        {children}
+        <div className="flex-1">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
