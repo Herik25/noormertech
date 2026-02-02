@@ -201,7 +201,7 @@ export default function Header() {
               onFocus={() => setIsSearchFocused(true)}
               onBlur={() => setIsSearchFocused(false)}
             />
-            <button className="absolute right-0 top-0 h-full w-10 flex items-center justify-center text-gray-500 hover:text-gray-700">
+            <button className="absolute right-0 top-0 h-full w-10 flex items-center justify-center">
               <Image src={search} alt="Search" />
             </button>
           </div>
