@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Menu } from "lucide-react";
 import Image from "next/image";
 import call from "@/public/header/call.svg";
 import logo from "@/public/logo.png";
@@ -10,6 +10,11 @@ import wishlist from "@/public/header/wishlist.svg";
 import cart from "@/public/header/cart.svg";
 import search from "@/public/header/search.svg";
 import { useState } from "react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 export default function Header() {
   const [isSearchFocused, setIsSearchFocused] = useState(false);
@@ -17,7 +22,7 @@ export default function Header() {
   return (
     <header className="w-full font-sans bg-white">
       {/* Top Notification Bar */}
-      <div className="bg-tertiary text-center py-3 px-4 border-b border-secondary">
+      <div className="bg-tertiary text-center py-3 px-4 border-b border-secondary hidden lg:block">
         <p className="text-xs md:text-sm tracking-[-0.5px] font-normal">
           Reach us on Instagram @competitionsuitshop, and our seasoned experts will personally guide you
         </p>
@@ -25,10 +30,51 @@ export default function Header() {
 
       {/* Main Header Area */}
       <div className="py-3 md:py-5 border-b">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-0 container mx-auto px-4">
+        <div className="grid grid-cols-[auto_auto_1fr] lg:grid-cols-3 items-center gap-3 xl:max-w-7xl mx-auto px-4 relative">
           
-          {/* Left: Contact Info */}
-          <div className="flex items-center gap-2 order-2 md:order-1 self-center md:self-auto">
+          {/* Mobile/Tablet Menu Trigger (Hidden on LG aka Desktop) */}
+          <div className="lg:hidden order-1">
+            <Sheet>
+              <SheetTrigger asChild>
+                <button aria-label="Open menu" className="p-2">
+                  <Menu className="w-6 h-6" />
+                </button>
+              </SheetTrigger>
+              <SheetContent side="left" className="p-4" onOpenAutoFocus={(e) => e.preventDefault()}>
+                <div className="flex flex-col gap-6">
+                  <Link href="/" className="block mb-4">
+                    <Image src={logo} alt="Logo" className="max-w-60" />
+                  </Link>
+                  <nav className="flex flex-col gap-4 text-base font-medium">
+                    <div className="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+                      <span>Competition Suit</span>
+                      <ChevronDown className="w-4 h-4" />
+                    </div>
+                    <div className="flex items-center justify-between cursor-pointer hover:text-primary transition-colors">
+                      <span>Style & Measurement Guide</span>
+                      <ChevronDown className="w-4 h-4" />
+                    </div>
+                    <Link href="/buy-now" className="hover:text-primary transition-colors">Buy now, Design later</Link>
+                    <Link href="/schedule" className="hover:text-primary transition-colors">Schedule a Consult</Link>
+                    <Link href="/blog" className="hover:text-primary transition-colors">Blog</Link>
+                  </nav>
+                  {/* Contact Info in Mobile Menu (optional) */}
+                   <div className="flex items-center gap-2 mt-4">
+                    <Image src={call} alt="Call" />
+                    <a 
+                      href="tel:+16467559535" 
+                      className="text-sm font-medium border-b border-black tracking-[-0.5px]"
+                    >
+                      +1 646 755 9535
+                    </a>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
+
+          {/* Left: Contact Info (Desktop/LG Only) */}
+          <div className="hidden lg:flex items-center gap-2 order-1">
             <Image src={call} alt="Call" />
             <a 
               href="tel:+16467559535" 
@@ -38,15 +84,16 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Center: Logo */}
-          <div className="order-1 md:order-2 shrink-0">
+          {/* Center: Logo (Absolute Center on Mobile, Static on Desktop) */}
+          <div className="lg:mx-0 order-2 shrink-0">
             <Link href="/" className="block">
-              <Image src={logo} alt="Logo" />
+              {/* Responsive logo size */}
+              <Image src={logo} alt="Logo" className="h-8 w-auto lg:h-auto" />
             </Link>
           </div>
 
           {/* Right: Actions */}
-          <div className="flex items-center gap-2 md:gap-4 order-3 md:order-3">
+          <div className="flex items-center justify-end gap-2 md:gap-4 order-3 pr-2">
             <Link href="/account" aria-label="Account">
               <Image src={account} alt="Account" />
             </Link>
@@ -65,10 +112,10 @@ export default function Header() {
 
       {/* Bottom Navigation & Search */}
       <div className="border-b border-border">
-        <div className="container mx-auto px-4 py-4 flex flex-col lg:flex-row items-center justify-between gap-y-4 lg:gap-0">
+        <div className="xl:max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row items-center justify-between gap-y-4 gap-4 md:gap-6">
           
-          {/* Navigation Links */}
-          <nav className="w-full lg:w-auto overflow-x-auto no-scrollbar">
+          {/* Navigation Links (Desktop/LG Only) */}
+          <nav className="hidden lg:block w-full lg:w-auto">
             <ul className="flex items-center justify-center lg:justify-start gap-4 md:gap-6 min-w-max text-xs md:text-sm font-medium tracking-[-0.5px]">
               <li className="relative group cursor-pointer flex items-center gap-1 hover:text-primary transition-colors">
                 <span>Competition Suit</span>
@@ -90,7 +137,7 @@ export default function Header() {
             </ul>
           </nav>
 
-          {/* Search Bar */}
+          {/* Search Bar - Visible on all */}
           <div className="w-full lg:w-[320px] relative">
             <input
               type="text"
