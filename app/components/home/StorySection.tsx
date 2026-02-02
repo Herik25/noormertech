@@ -19,8 +19,8 @@ export default function StorySection() {
         </div>
 
         {/* Features / Icons */}
-        <div className="max-w-5xl mx-auto place-items-center grid grid-cols-3 mt-16 mb-8">
-          <div className="flex items-center gap-3">
+        <div className="max-w-5xl mx-auto place-items-center grid grid-cols-1 md:grid-cols-3 mt-8 mb-8 md:mt-16 md:mb-8">
+          <div className="hidden md:flex items-center gap-3">
             <Globe className="w-6 h-6 text-primary" strokeWidth={1.5} />
             <span className="font-medium whitespace-nowrap tracking-[-0.5px]">
               Worldwide Stories
@@ -34,7 +34,7 @@ export default function StorySection() {
             </span>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <BadgeCheck className="w-6 h-6 text-primary" strokeWidth={1.5} />
             <span className="font-medium whitespace-nowrap tracking-[-0.5px]">
               Unique Products
@@ -43,23 +43,33 @@ export default function StorySection() {
         </div>
 
         {/* Actions */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className="flex items-center justify-center flex-wrap gap-4">
           <Button
             asChild
             variant="outline"
-            className="border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-[8px] px-4 py-3 text-base font-medium transition-colors tracking-[-0.5px]"
+            className="md:border-2 border-primary text-black hover:bg-primary hover:text-white rounded-[8px] px-4 py-3 text-base font-medium transition-colors tracking-[-0.5px]"
           >
-            <Link href="/share-story">
+            <Link href="#">
               Share your story with us
             </Link>
           </Button>
 
           <Link 
-            href="/order-suit" 
-            className="text-black underline underline-offset-4 text-base font-medium transition-colors tracking-[-0.5px]"
+            href="#" 
+            className="hidden md:block text-black underline underline-offset-4 text-base font-medium transition-colors tracking-[-0.5px]"
           >
             Order your unique suit
           </Link>
+
+          <Button
+            asChild
+            variant="outline"
+            className="inline-flex md:hidden md:border-2 border-secondary bg-tertiary text-black hover:bg-primary hover:text-white rounded-[8px] px-4 py-3 text-base font-medium transition-colors tracking-[-0.5px]"
+          >
+            <Link href="#">
+              Book a Consultation
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
