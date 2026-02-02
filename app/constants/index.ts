@@ -2,10 +2,7 @@ export const NAV_ITEMS = [
   {
     label: "Competition Suit",
     children: [
-      { name: "Bikini", href: "/category/bikini" },
-      { name: "Figure", href: "/category/figure" },
-      { name: "Physique", href: "/category/physique" },
-      { name: "Wellness", href: "/category/wellness" },
+      { name: "All images", href: "/all-images" },
     ],
   },
   {
@@ -26,7 +23,7 @@ export const CLIENT_STORIES = [
   {
     id: 1,
     media: {
-      type: "image",
+      type: "video",
       src: "/clients/client-story-1.png",
       alt: "Kelsey Ahronson unboxing",
     },
@@ -53,7 +50,7 @@ export const CLIENT_STORIES = [
   {
     id: 2,
     media: {
-      type: "image",
+      type: "video",
       src: "/clients/client-story-2.png",
       alt: "Competition Suit",
     },
@@ -77,7 +74,7 @@ export const CLIENT_STORIES = [
   {
     id: 3,
     media: {
-      type: "image",
+      type: "video",
       src: "/clients/client-story-3.png",
       alt: "Competition Suit",
     },
@@ -101,7 +98,7 @@ export const CLIENT_STORIES = [
   {
     id: 4,
     media: {
-      type: "image",
+      type: "video",
       src: "/clients/client-story-4.png",
       alt: "Competition Suit",
     },
@@ -150,7 +147,7 @@ export const CLIENT_STORIES = [
     id: 6,
     media: {
       type: "image",
-      src: "/clients/client-story-1.png",
+      src: "/clients/client-story-6.png",
       alt: "Kelsey Ahronson unboxing",
     },
 
@@ -176,8 +173,8 @@ export const CLIENT_STORIES = [
   {
     id: 7,
     media: {
-      type: "image",
-      src: "/clients/client-story-2.png",
+      type: "video",
+      src: "/clients/client-story-7.png",
       alt: "Competition Suit",
     },
     client: {
@@ -201,7 +198,7 @@ export const CLIENT_STORIES = [
     id: 8,
     media: {
       type: "image",
-      src: "/clients/client-story-3.png",
+      src: "/clients/client-story-8.png",
       alt: "Competition Suit",
     },
     client: {
@@ -225,7 +222,7 @@ export const CLIENT_STORIES = [
     id: 9,
     media: {
       type: "image",
-      src: "/clients/client-story-4.png",
+      src: "/clients/client-story-9.png",
       alt: "Competition Suit",
     },
     client: {
@@ -248,8 +245,200 @@ export const CLIENT_STORIES = [
   {
     id: 10,
     media: {
+      type: "video",
+      src: "/clients/client-story-10.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+   {
+    id: 11,
+    media: {
       type: "image",
-      src: "/clients/client-story-5.png",
+      src: "/clients/client-story-11.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+   {
+    id: 12,
+    media: {
+      type: "image",
+      src: "/clients/client-story-12.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+   {
+    id: 13,
+    media: {
+      type: "image",
+      src: "/clients/client-story-13.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+   {
+    id: 14,
+    media: {
+      type: "image",
+      src: "/clients/client-story-14.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+  {
+    id: 15,
+    media: {
+      type: "video",
+      src: "/clients/client-story-15.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+  {
+    id: 16,
+    media: {
+      type: "image",
+      src: "/clients/client-story-16.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+  {
+    id: 17,
+    media: {
+      type: "image",
+      src: "/clients/client-story-17.png",
+      alt: "Competition Suit",
+    },
+    client: {
+      name: "Kelsey Ahronson",
+      subtitle: "IFBB 2024, Florida Winner",
+    },
+    quote: {
+      title: "Confidence on stage",
+      description:
+        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+    },
+    product: {
+      id: "black-pro-figure-suit",
+      name: "Black Pro Figure Suit",
+      image: "/images/products/black-figure-suit.png",
+      href: "/product/black-pro-figure-suit",
+      cta: "View Product",
+    },
+  },
+  {
+    id: 18,
+    media: {
+      type: "image",
+      src: "/clients/client-story-18.png",
       alt: "Competition Suit",
     },
     client: {

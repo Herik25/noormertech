@@ -37,7 +37,7 @@ export default function StorySection() {
           <div className="hidden md:flex items-center gap-3">
             <BadgeCheck className="w-6 h-6 text-primary" strokeWidth={1.5} />
             <span className="font-medium whitespace-nowrap tracking-[-0.5px]">
-              Unique Products
+              Unique Suit Designs
             </span>
           </div>
         </div>
@@ -47,19 +47,22 @@ export default function StorySection() {
           <Button
             asChild
             variant="outline"
-            className="md:border-2 border-primary text-black hover:bg-primary hover:text-white rounded-[8px] px-4 py-3 text-base font-medium transition-colors tracking-[-0.5px]"
+            className="md:border border-primary text-black hover:bg-primary hover:text-white rounded-[8px] px-4 py-3 text-base font-medium transition-colors tracking-[-0.5px]"
           >
             <Link href="#">
               Share your story with us
             </Link>
           </Button>
 
-          <Link 
-            href="#" 
-            className="text-black underline underline-offset-4 text-base font-medium transition-colors tracking-[-0.5px]"
+          <Button
+            asChild
+            variant="outline"
+            className="border border-secondary bg-tertiary text-black hover:bg-primary hover:text-white rounded-[8px] px-4 py-3 text-base font-normal transition-colors tracking-[-0.5px]"
           >
-            Order your unique suit
-          </Link>
+            <Link href="#">
+              Book a Consultation
+            </Link>
+          </Button>
         </div>
       </div>
     </section>
