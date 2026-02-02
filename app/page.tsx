@@ -1,9 +1,9 @@
-import React from 'react'
+import Hero from "./components/home/Hero";
 
-function page() {
+export default function Home() {
   return (
-    <div>page</div>
-  )
+    <main className="flex-1 w-full bg-white">
+      <Hero />
+    </main>
+  );
 }
-
-export default page

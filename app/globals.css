@@ -130,3 +130,32 @@
 @theme {
   --max-width-7xl: 1480px;
 }
+
+.swiper-slide {
+  height: 100% !important;
+  position: relative !important;
+  opacity: 1 !important;
+  transform: none !important;
+  padding: 0 !important;
+  display: block !important;
+}
+
+.slide-inner {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 80% !important;
+  transition: height 0.5s ease-out;
+}
+
+.swiper-slide-prev .slide-inner,
+.swiper-slide-next .slide-inner {
+  height: 90% !important;
+}
+
+.swiper-slide-active .slide-inner {
+  height: 100% !important;
+  border-bottom-right-radius: 16px !important;
+  border-bottom-left-radius: 16px !important;
+}

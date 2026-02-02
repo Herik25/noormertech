@@ -141,7 +141,7 @@ export default function Header() {
           </div>
 
           {/* Center: Logo */}
-          <div className="lg:mx-0 order-2 shrink-0 justify-self-center lg:justify-self-auto">
+          <div className="lg:mx-0 order-2 shrink-0 justify-self-center">
              <LogoImage />
           </div>
 
