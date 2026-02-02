@@ -9,7 +9,7 @@ import { CLIENT_STORIES } from "@/app/constants";
 
 export default function Hero() {
   return (
-    <section className="w-full grid place-items-center bg-white my-16 lg:my-24">
+    <section className="w-full grid place-items-center bg-white my-16 lg:my-24 overflow-hidden">
       <div className="w-screen lg:max-w-7xl mx-auto md:px-4">
         <Swiper
           spaceBetween={16}
