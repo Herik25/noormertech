@@ -1,100 +1,109 @@
-# ✨ Noormertech E-Commerce Experience
+# Frontend Developer Assessment - E-Commerce/Competition Suit Interface
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg?style=for-the-badge&logo=vercel)](https://noormertech.vercel.app)
-[![Next.js](https://img.shields.io/badge/Next.js-16.0-black.svg?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC.svg?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![Live Deployment](https://img.shields.io/badge/Live-Demo-brightgreen.svg?style=for-the-badge&logo=vercel)](https://noormertech.vercel.app)
+[![Framework](https://img.shields.io/badge/Next.js-15.0-black.svg?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Styling](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC.svg?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 
-> **A masterclass in modern, pixel-perfect web development.**
-> This project isn't just an e-commerce site; it's a statement on how precise engineering meets premium aesthetics.
-
----
-
-## 🚀 The Vision
-
-Noormertech was architected to deliver a **seamless, high-fidelity shopping experience**. We moved beyond standard templates to create a custom, responsiveness-first tailored solution. Every interaction—from the fluid carousel on the home page to the micro-interactions in the cart—has been polished to production-grade standards.
-
-## 💎 Key Features & Capabilities
-
-### 1. Immersive Home Experience
-
-- **High-Impact Hero Section**: Featuring a bespoke, beautifully animated carousel that instantly engages users.
-- **Enhanced UI Design**: A carefully curated color palette and typography system (`Inter` / `Outfit`) that exudes luxury and trust.
-
-### 2. Dynamic Image Gallery (`/all-images`)
-
-- **Interactive Modal System**: A custom-built modal experience that supports deep navigation.
-- **Seamless Browsing**: Integrated carousel within the modal to browse client stories and product showcases without losing context.
-- **Performance Optimized**: Leveraging Next.js `Image` for effortless loading of high-resolution assets.
-
-### 3. Smart Cart System
-
-- **State-Driven Interactivity**:
-  - **Real-time Updates**: Instant subtotal recalculations when modifying quantities.
-  - **Item Management**: Intuitive remove functionality and quantity adjustments.
-  - **Discount Logic**: Functional promo code system (Try `SAVE10` or `SAVE20`) that dynamically applies logic to the final total.
-- **Mobile-First Design**: A responsive cart layout that adapts flawlessly from desktop to mobile screens.
-
-### 4. Streamlined Checkout
-
-- **Sticky Summary**: A clever, UX-focused sticky sidebar that keeps the order details in view while filling out delivery forms.
-- **Dynamic Forms**: Interactive payment method toggles and form state management.
-- **Production-Ready UI**: Clean inputs, error handling, and a distraction-free layout to maximize conversion.
+> **Submission for Frontend Developer Role** 
+> This repository contains the solution for the frontend technical assessment. The objective was to build a responsive, pixel-perfect e-commerce interface with specific interactive functionalities.
 
 ---
 
-## 🏗 System Architecture & Component Structure
+## � Assignment Overview
 
-We adopted a **Feature-First Architecture** to ensure scalability and maintainability. This structure decouples complex logic, making the codebase modular and easy to extend.
+The goal of this assessment was to demonstrate proficiency in:
+1.  **Pixel-Perfect Implementation**: Replicating provided UI designs with high fidelity.
+2.  **Responsive Design**: Ensuring flawless layout adaptation across mobile, tablet, and desktop viewports.
+3.  **UX-Focused**: transformed static UI mockups into dynamic, interactive elements
+4.  **Component Architecture**: Structuring a Next.js application for scalability and readability.
+
+---
+
+## ✅ Implemented Features
+
+### 1. Home Page & Hero Section
+*   **Requirement**: Create an engaging landing area with hero visuals.
+*   **Implementation**: 
+    *   Developed a responsive Hero component using `next/image` for optimized loading.
+    *   Implemented a custom carousel for the "Client Stories" section, allowing smooth transitions between testimonials.
+    *   Applied distinct typography (`Montserrat` and `Inter`) to match the design aesthetics.
+
+### 2. Interactive Image Gallery (`/all-images`)
+*   **Requirement**: A gallery view with a modal for detailed viewing.
+*   **Implementation**:
+    *   **Custom Modal**: Built a dedicated modal component triggered by selecting an image.
+    *   **In-Modal Navigation**: Integrated a carousel within the modal, allowing users to navigate through images without closing the view.
+    *   **Responsive Grid**: The main gallery uses a CSS grid that adapts column counts based on screen size.
+
+### 3. Shopping Cart Functionality (`/cart`)
+*   **Requirement**: A functional cart with dynamic price calculation and discount logic.
+*   **Implementation**:
+    *   **Dynamic State**: Implemented `useState` to handle item quantities. Changing quantity instantly updates the item total and subtotal.
+    *   **Remove Item**: Added functionality to remove items from the cart, updating the state accordingly.
+    *   **Discount Code System**: Created a working promo code input.
+        *   Test Codes: `SAVE10` (10% off), `SAVE20` (20% off).
+        *   Logic: Applies discount dynamically to the subtotal and displays the saved amount.
+    *   **Responsive Layout**: On mobile, the summary stacks below items; on desktop, it moves to a sidebar.
+
+### 4. Checkout Page (`/checkout`)
+*   **Requirement**: A checkout form with order summary and responsive layout.
+*   **Implementation**:
+    *   **Sticky Sidebar**: The Order Summary persists on the right side during scrolling on desktop for better UX.
+    *   **Payment Toggle**: Implemented radio button logic to switch between "Card" and "PayPal" payment methods, conditionally rendering the credit card form.
+    *   **Form Layout**: Used a responsive grid for input fields that stacks on mobile and expands to 2 columns on desktop.
+    *   **Theme Integration**: Utilized the project's primary and secondary colors for focus states and buttons.
+
+---
+
+## 📂 Project Structure
+
+The project follows a **Feature-First** directory structure to keep related logic together, demonstrating scalable architecture practices.
 
 ```bash
 app/
-├── components/          # Encapsulated Feature Logic
-│   ├── home/            # Hero, Carousel, Landing interactions
-│   ├── allImages/       # Gallery grid, Modal orchestration, Story cards
-│   ├── cart/            # CartSection, CartSummary, CartItem state managers
-│   └── common/          # Shared atomic components (Header, Footer, Buttons)
-├── constants/           # centralized static data (Product items, Nav links)
-├── checkout/            # Dedicated checkout route
-└── globals.css          # Design system variables & Tailwind directives
+├── all-images/          # Image Gallery Route
+├── cart/                # Shopping Cart Route
+├── checkout/            # Checkout Route
+├── components/          # Reusable UI Components
+│   ├── allImages/       # Gallery-specific components (Modal, Grid)
+│   ├── cart/            # Cart logic (CartItem, CartSummary)
+│   ├── home/            # Landing page components (Hero, Carousel)
+│   └── common/          # Shared atoms (Header, Button)
+└── constants/           # Static data (Mock Products, Nav Items)
 ```
-
-### Why this structure?
-
-- **Separation of Concerns**: Each feature controls its own state and presentation. The `CartSection` orchestrates the logic, while `CartItem` remains a pure presentational component.
-- **Atomic Design Principles**: Reusable tokens in `common/` prevent code duplication and ensure visual consistency across the app.
-- **Scalability**: New features can be added as new directories without polluting existing logic.
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Tech Stack & Decisions
 
-- **Framework**: [Next.js 15 (App Router)](https://nextjs.org/) - For server-side rendering and unmatched performance.
-- **Language**: [TypeScript](https://www.typescriptlang.org/) - Strict typing for robust, error-free code.
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - For rapid, utility-first styling and responsive design.
-- **UI Primitives**: [Shadcn UI](https://ui.shadcn.com/) & [Lucide React](https://lucide.dev/) - For accessible, beautifully designed components and icons.
+*   **Next.js 15 (App Router)**: Chosen for its robust structure, server-side rendering capabilities, and modern routing paradigms.
+*   **TypeScript**: Used to ensure type safety, particularly for Cart Item interfaces and Props, reducing runtime errors.
+*   **Tailwind CSS**: Selected for its utility-first approach, enabling rapid, pixel-perfect styling and easy responsive adjustments without context switching.
+*   **Lucide React**: Used for lightweight, consistent iconography standard across the application.
 
 ---
 
-## 🏁 Getting Started
+## 🚀 How to Run
 
-Clone the repository and spin up the development server in seconds.
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/your-username/noormertech.git
-
-# 2. Install dependencies
-npm install
-
-# 3. Run the development server
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) to witness the experience.
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/noormertech.git
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+3.  **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+4.  **View the application**:
+    Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ---
 
 <div align="center">
-  <sub>Built with precision by a developer who cares about every pixel.</sub>
+  <sub>Submitted by [Your Name]</sub>
 </div>
