@@ -1,6 +1,5 @@
 "use client";
 
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
@@ -44,7 +43,6 @@ export default function SpotlightSection() {
           </ul>
         </div>
 
-        {/* Action Button */}
         <Button
           asChild
           variant="outline"
@@ -55,7 +53,6 @@ export default function SpotlightSection() {
           </Link>
         </Button>
 
-        {/* Footer Text */}
         <p className="text-center text-[#000000CC] text-sm md:text-base max-w-2xl mx-auto tracking-[-0.5px]">
           ✨ Your story could uplift someone just starting. Motivate someone who almost gave up. Show what’s possible with heart and hustle.
         </p>
