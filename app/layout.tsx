@@ -30,7 +30,7 @@ export default function RootLayout({
         className={`${montserrat.variable} ${dancingScript.variable} antialiased font-sans flex flex-col min-h-screen`}
       >
         <Header />
-        <div className="flex-1">
+        <div className="flex-1 bg-white">
           {children}
         </div>
         <Footer />
