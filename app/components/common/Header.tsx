@@ -3,12 +3,17 @@
 import Link from "next/link";
 import { ChevronDown, Menu } from "lucide-react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import call from "@/public/header/call.svg";
 import logo from "@/public/logo.png";
 import account from "@/public/header/account.svg";
 import wishlist from "@/public/header/wishlist.svg";
 import cart from "@/public/header/cart.svg";
 import search from "@/public/header/search.svg";
+import whatsapp from "@/public/cart/whatsapp.svg";
+import shipping from "@/public/cart/shiping.svg";
+import security from "@/public/cart/security.svg";
+import review from "@/public/cart/review.svg";
 import { useState } from "react";
 import {
   Sheet,
@@ -37,14 +42,17 @@ const LogoImage = ({ className }: { className?: string }) => (
   </Link>
 );
 
-const ActionIcons = () => (
+const ActionIcons = ({ isCart = false }: { isCart?: boolean }) => (
    <div className="flex items-center justify-end gap-2 md:gap-4 pr-2">
-    <Link href="/account" aria-label="Account">
+    <Link href="/account" aria-label="Account" className="flex items-center gap-2">
       <Image src={account} alt="Account" />
+      {isCart && <span className="text-sm font-medium hidden md:block text-[#1C1C1C] tracking-[-0.5px]">Login</span>}
     </Link>
-    <Link href="/wishlist" aria-label="Wishlist">
-      <Image src={wishlist} alt="Wishlist" />
-    </Link>
+    {!isCart && (
+      <Link href="/wishlist" aria-label="Wishlist">
+        <Image src={wishlist} alt="Wishlist" />
+      </Link>
+    )}
     <Link href="/cart" aria-label="Cart" className="relative">
       <Image src={cart} alt="Cart" />
       <span className="absolute -top-2 -right-2 bg-tertiary text-[10px] font-medium w-4 h-4 flex items-center justify-center rounded-full border border-secondary">
@@ -54,8 +62,44 @@ const ActionIcons = () => (
   </div>
 );
 
+const FeatureBar = () => (
+  <div className="hidden lg:block py-3 border-b bg-[#FAFAFA]">
+    <div className="xl:max-w-6xl mx-auto px-4 flex justify-between items-center text-xs text-[#4F4F4F]">
+      <div className="flex items-center gap-4">
+        <Image src={whatsapp} alt="Support" className="w-8 h-8" />
+        <div className="flex flex-col">
+          <span className="font-medium text-black text-xs tracking-[-0.5px] leading-[150%]">Customer Support 24/7</span>
+          <span className="text-[#1C1C1C] font-normal text-xs tracking-[-0.5px] leading-[150%]">Highest rated customer service</span>
+        </div>
+      </div>
+      <div className="flex items-center gap-4">
+        <Image src={shipping} alt="Shipping" className="w-8 h-8" />
+        <div className="flex flex-col">
+          <span className="font-medium text-black text-xs tracking-[-0.5px] leading-[150%]">Free Shipping</span>
+          <span className="text-[#1C1C1C] font-normal text-xs tracking-[-0.5px] leading-[150%]">Free shipping worldwide!</span>
+        </div>
+      </div>
+      <div className="flex items-center gap-4">
+        <Image src={security} alt="Security" className="w-8 h-8" />
+        <div className="flex flex-col">
+          <span className="font-medium text-black text-xs tracking-[-0.5px] leading-[150%]">Secured Payments</span>
+          <span className="text-[#1C1C1C] font-normal text-xs tracking-[-0.5px] leading-[150%]">100% secured payments</span>
+        </div>
+      </div>
+      <div className="flex items-center gap-4">
+        <Image src={review} alt="Review" className="w-8 h-8" />
+        <div className="flex flex-col">
+          <span className="font-medium text-black text-xs tracking-[-0.5px] leading-[150%]">Athletes Love Our Suits</span>
+          <span className="text-[#1C1C1C] font-normal text-xs tracking-[-0.5px] leading-[150%]">Experience our 5 stars service</span>
+        </div>
+      </div>
+    </div>
+  </div>
+);
 
 export default function Header() {
+  const pathname = usePathname();
+  const isCart = pathname?.includes('/cart');
   const [isSearchFocused, setIsSearchFocused] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState<Record<string, boolean>>({});
 
@@ -137,10 +181,12 @@ export default function Header() {
           </div>
 
           <div className="order-3">
-             <ActionIcons />
+             <ActionIcons isCart={isCart} />
           </div>
         </div>
       </div>
+
+      {isCart && <FeatureBar />}
 
       <div className="border-b border-border">
         <div className="xl:max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row items-center justify-between gap-y-4 gap-4 md:gap-6">
