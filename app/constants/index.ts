@@ -1137,3 +1137,27 @@ export const CLIENT_STORIES = [
     },
   },
 ];
+
+export const CART_ITEMS = [
+  {
+    id: 1,
+    name: "Orange Pink Wellness Competition Suit (BM151-29)",
+    originalPrice: 426.00,
+    price: 379.00,
+    discountPercentage: 11,
+    image: "/cart/orange-pink-wellness-suit.png",
+  },
+  {
+    id: 2,
+    name: "Orange Pink Wellness Competition Suit (BM151-29)",
+    originalPrice: 379.00,
+    price: 329.00,
+    discountPercentage: 13,
+    image: "/cart/purple-wellness-suit.png",
+  },
+];
+
+export const DISCOUNT_CODES = [
+  { code: "SAVE10", percentage: 10 },
+  { code: "SAVE20", percentage: 20 },
+];

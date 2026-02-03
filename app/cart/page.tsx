@@ -1,9 +1,15 @@
-import React from 'react'
+import CartSection from "@/app/components/cart/CartSection";
+import type { Metadata } from "next";
 
-function Cart() {
+export const metadata: Metadata = {
+  title: "Shopping Cart | Competition Suit Shop",
+  description: "Review and purchase your custom competition suits.",
+};
+
+export default function CartPage() {
   return (
-    <div>Cart</div>
-  )
+    <main>
+       <CartSection />
+    </main>
+  );
 }
-
-export default Cart
