@@ -26,6 +26,43 @@ export const CLIENT_STORIES = [
       type: "video",
       src: "/clients/client-story-1.png",
       alt: "Kelsey Ahronson unboxing",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-1.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-2.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-3.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-4.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-5.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-6.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-7.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+      ]
     },
     client: {
       name: "Kelsey Ahronson",
@@ -51,6 +88,43 @@ export const CLIENT_STORIES = [
       type: "video",
       src: "/clients/client-story-2.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-2.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-3.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-4.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-5.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-6.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-7.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-8.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Gissele Quezadq",
@@ -76,6 +150,43 @@ export const CLIENT_STORIES = [
       type: "video",
       src: "/clients/client-story-3.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-3.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-4.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-5.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-6.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-7.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-8.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-9.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Sarah Jenkins",
@@ -101,6 +212,43 @@ export const CLIENT_STORIES = [
       type: "video",
       src: "/clients/client-story-4.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-4.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-5.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-6.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-7.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-8.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-9.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-10.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Maria Rodriguez",
@@ -126,6 +274,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-5.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-5.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-6.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-7.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-8.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-9.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-10.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-11.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Emily Clark",
@@ -151,6 +336,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-6.png",
       alt: "Kelsey Ahronson unboxing",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-6.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-7.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-8.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-9.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-10.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-11.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-12.png",
+          alt: "Kelsey Ahronson unboxing"
+        },
+      ]
     },
     client: {
       name: "Jessica Lee",
@@ -176,6 +398,43 @@ export const CLIENT_STORIES = [
       type: "video",
       src: "/clients/client-story-7.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-7.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-8.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-9.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-10.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-11.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-12.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-13.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Amanda Thorne",
@@ -201,6 +460,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-8.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-8.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-9.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-10.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-11.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-12.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-13.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-14.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Rachel Green",
@@ -226,6 +522,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-9.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-9.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-10.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-11.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-12.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-13.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-14.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Sophie Turner",
@@ -251,6 +584,43 @@ export const CLIENT_STORIES = [
       type: "video",
       src: "/clients/client-story-10.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-10.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-11.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-12.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-13.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-14.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Olivia Martinez",
@@ -276,6 +646,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-11.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-11.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-12.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-13.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-14.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-2.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-3.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Chloe Kim",
@@ -301,6 +708,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-12.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-12.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-13.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-14.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-15.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-2.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-3.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Natalie Portman",
@@ -326,6 +770,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-13.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-13.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-14.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-15.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-2.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-3.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-4.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Isabella Rossi",
@@ -351,6 +832,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-14.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-14.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-15.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-2.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-3.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-4.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-5.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Zoe Chen",
@@ -376,6 +894,43 @@ export const CLIENT_STORIES = [
       type: "video",
       src: "/clients/client-story-15.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-15.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-1.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-2.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-3.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-4.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-5.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-6.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Hannah Baker",
@@ -401,6 +956,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-16.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-16.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-16.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-16.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-16.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-16.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-16.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-16.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Victoria Hall",
@@ -426,6 +1018,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-17.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-17.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-17.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-17.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-17.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-17.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-17.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-17.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Danielle Rose",
@@ -451,6 +1080,43 @@ export const CLIENT_STORIES = [
       type: "image",
       src: "/clients/client-story-18.png",
       alt: "Competition Suit",
+      images: [
+        {
+          id: 1,
+          src: "/clients/client-story-18.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 2,
+          src: "/clients/client-story-18.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 3,
+          src: "/clients/client-story-18.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 4,
+          src: "/clients/client-story-18.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 5,
+          src: "/clients/client-story-18.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 6,
+          src: "/clients/client-story-18.png",
+          alt: "Competition Suit"
+        },
+        {
+          id: 7,
+          src: "/clients/client-story-18.png",
+          alt: "Competition Suit"
+        },
+      ]
     },
     client: {
       name: "Morgan Stark",

@@ -18,6 +18,11 @@ interface Story {
     type: string;
     src: string;
     alt: string;
+    images?: {
+      id: number;
+      src: string;
+      alt: string;
+    }[];
   };
   client: {
     name: string;
@@ -41,22 +46,21 @@ interface StoryModalProps {
   isOpen: boolean;
   onClose: () => void;
   story: Story | null;
-  onNext: () => void;
-  onPrev: () => void;
-  currentIndex: number;
-  totalStories: number;
 }
 
 export default function StoryModal({
   isOpen,
   onClose,
   story,
-  onNext,
-  onPrev,
-  currentIndex,
-  totalStories,
 }: StoryModalProps) {
   const [mounted, setMounted] = useState(false);
+  const [imageIndex, setImageIndex] = useState(0);
+  const [lastStoryId, setLastStoryId] = useState<number | undefined>(story?.id);
+
+  if (story?.id !== lastStoryId) {
+    setLastStoryId(story?.id);
+    setImageIndex(0);
+  }
 
   useEffect(() => {
     const timer = setTimeout(() => setMounted(true), 0);
@@ -64,6 +68,9 @@ export default function StoryModal({
   }, []);
 
   if (!mounted || !story) return null;
+
+  const images = story.media.images || [{ id: 0, src: story.media.src, alt: story.media.alt }];
+  const currentImage = images[imageIndex] || images[0];
 
   return (
     <Dialog open={isOpen} onOpenChange={(open) => !open && onClose()}>
@@ -76,22 +83,24 @@ export default function StoryModal({
             
             <div className="relative w-full h-full md:h-[90%] rounded-[20px] overflow-hidden group">
               <Image
-                src={story.media.src}
-                alt={story.media.alt}
+                src={currentImage.src}
+                alt={currentImage.alt}
                 fill
                 className="object-cover"
               />
               
               <div className="absolute inset-0 flex lg:hidden items-center justify-between p-4 pointer-events-none">
                 <button 
-                  onClick={(e) => { e.stopPropagation(); onPrev(); }}
-                  className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-md flex items-center justify-center text-white pointer-events-auto"
+                  onClick={(e) => { e.stopPropagation(); setImageIndex(prev => Math.max(0, prev - 1)); }}
+                  disabled={imageIndex === 0}
+                  className={`w-8 h-8 rounded-full bg-black/30 backdrop-blur-md flex items-center justify-center text-white pointer-events-auto transition-opacity ${imageIndex === 0 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
                 >
                   <ChevronLeft className="w-5 h-5" />
                 </button>
                 <button 
-                  onClick={(e) => { e.stopPropagation(); onNext(); }}
-                  className="w-8 h-8 rounded-full bg-black/30 backdrop-blur-md flex items-center justify-center text-white pointer-events-auto"
+                  onClick={(e) => { e.stopPropagation(); setImageIndex(prev => Math.min(images.length - 1, prev + 1)); }}
+                  disabled={imageIndex === images.length - 1}
+                  className={`w-8 h-8 rounded-full bg-black/30 backdrop-blur-md flex items-center justify-center text-white pointer-events-auto transition-opacity ${imageIndex === images.length - 1 ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
                 >
                   <ChevronRight className="w-5 h-5" />
                 </button>
@@ -100,10 +109,10 @@ export default function StoryModal({
 
             <div className="hidden md:flex h-[10%] items-center justify-between px-2">
                <button 
-                 onClick={(e) => { e.stopPropagation(); if (currentIndex > 0) onPrev(); }}
-                 disabled={currentIndex === 0}
+                 onClick={(e) => { e.stopPropagation(); if (imageIndex > 0) setImageIndex(prev => prev - 1); }}
+                 disabled={imageIndex === 0}
                  className={`w-12 h-12 rounded-full border border-tertiary flex items-center justify-center transition-all ${
-                   currentIndex === 0 
+                   imageIndex === 0 
                      ? "bg-secondary text-white cursor-default" 
                      : "bg-primary text-white hover:bg-primary/90 cursor-pointer"
                  }`}
@@ -115,14 +124,14 @@ export default function StoryModal({
                   <div 
                     className="flex gap-2 transition-transform duration-300 ease-out"
                     style={{ 
-                      transform: `translateX(-${Math.max(0, Math.min(currentIndex - 1, totalStories - 4)) * 18}px)` 
+                      transform: `translateX(-${Math.max(0, Math.min(imageIndex - 1, images.length - 4)) * 18}px)` 
                     }}
                   >
-                   {Array.from({ length: totalStories }).map((_, idx) => (
+                   {images.map((_, idx) => (
                      <div
                        key={idx}
                        className={`h-2.5 rounded-full transition-all shrink-0 duration-300 ${
-                         idx === currentIndex ? "bg-primary w-8" : "bg-secondary w-2.5"
+                         idx === imageIndex ? "bg-primary w-8" : "bg-secondary w-2.5"
                        }`}
                      />
                    ))}
@@ -130,10 +139,10 @@ export default function StoryModal({
                </div>
 
                <button 
-                 onClick={(e) => { e.stopPropagation(); if (currentIndex < totalStories - 1) onNext(); }}
-                 disabled={currentIndex === totalStories - 1}
+                 onClick={(e) => { e.stopPropagation(); if (imageIndex < images.length - 1) setImageIndex(prev => prev + 1); }}
+                 disabled={imageIndex === images.length - 1}
                  className={`w-12 h-12 rounded-full border border-tertiary flex items-center justify-center transition-all ${
-                   currentIndex === totalStories - 1 
+                   imageIndex === images.length - 1 
                      ? "bg-secondary text-white cursor-default" 
                      : "bg-primary text-white hover:bg-primary/90 cursor-pointer"
                  }`}

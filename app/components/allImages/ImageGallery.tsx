@@ -36,20 +36,6 @@ export default function ImageGallery() {
     }, 600);
   };
 
-  const handlePrev = () => {
-    if (selectedStoryIndex === null) return;
-    setSelectedStoryIndex((prev) => 
-      prev !== null ? (prev === 0 ? stories.length - 1 : prev - 1) : null
-    );
-  };
-
-  const handleNext = () => {
-    if (selectedStoryIndex === null) return;
-    setSelectedStoryIndex((prev) => 
-      prev !== null ? (prev === stories.length - 1 ? 0 : prev + 1) : null
-    );
-  };
-
   return (
     <section className="w-full my-16 pb-16 lg:pb-24 bg-white">
       <div className="lg:max-w-7xl mx-auto px-4 md:px-8">
@@ -99,10 +85,6 @@ export default function ImageGallery() {
           isOpen={selectedStoryIndex !== null}
           onClose={() => setSelectedStoryIndex(null)}
           story={selectedStoryIndex !== null ? stories[selectedStoryIndex] : null}
-          onNext={handleNext}
-          onPrev={handlePrev}
-          currentIndex={selectedStoryIndex ?? 0}
-          totalStories={stories.length}
         />
       </div>
     </section>
