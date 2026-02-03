@@ -65,18 +65,15 @@ export default function Header() {
 
   return (
     <header className="w-full font-sans bg-white">
-      {/* Top Notification Bar */}
       <div className="bg-tertiary text-center py-3 px-4 border-b border-secondary hidden lg:block">
         <p className="text-xs md:text-sm tracking-[-0.5px] font-normal">
           Reach us on Instagram @competitionsuitshop, and our seasoned experts will personally guide you
         </p>
       </div>
 
-      {/* Main Header Area */}
       <div className="py-3 md:py-5 border-b">
-        <div className="grid grid-cols-[auto_auto_1fr] lg:grid-cols-3 items-center gap-3 xl:max-w-7xl mx-auto px-4 relative">
+        <div className="grid grid-cols-[auto_1fr_auto] lg:grid-cols-3 items-center gap-3 xl:max-w-7xl mx-auto px-4 relative">
           
-          {/* Mobile/Tablet Menu Trigger */}
           <div className="lg:hidden order-1">
             <Sheet>
               <SheetTrigger asChild>
@@ -87,12 +84,10 @@ export default function Header() {
               <SheetContent side="left" className="p-4 overflow-y-auto" onOpenAutoFocus={(e) => e.preventDefault()}>
                 <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
                 <div className="flex flex-col gap-2">
-                   {/* Mobile Logo */}
                   <div className="mb-4">
                      <LogoImage className="max-w-60 h-auto min-h-7" />
                   </div>
                   
-                  {/* Mobile Navigation */}
                   <nav className="flex flex-col gap-2 text-base font-medium">
                     {NAV_ITEMS.map((item) => (
                       <div key={item.label}>
@@ -128,35 +123,28 @@ export default function Header() {
                     ))}
                   </nav>
 
-                  {/* Mobile Contact */}
                   <ContactInfo className="mt-4" />
                 </div>
               </SheetContent>
             </Sheet>
           </div>
 
-          {/* Desktop Contact Info */}
           <div className="hidden lg:block order-1">
             <ContactInfo />
           </div>
-
-          {/* Center: Logo */}
-          <div className="lg:mx-0 order-2 shrink-0 justify-self-center">
-             <LogoImage />
+          <div className="lg:mx-0 order-2 justify-self-center min-w-0 px-2 w-full flex justify-center">
+             <LogoImage className="w-auto max-w-full h-auto object-contain" />
           </div>
 
-          {/* Right: Actions */}
           <div className="order-3">
              <ActionIcons />
           </div>
         </div>
       </div>
 
-      {/* Bottom Navigation & Search */}
       <div className="border-b border-border">
         <div className="xl:max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row items-center justify-between gap-y-4 gap-4 md:gap-6">
           
-          {/* Desktop Navigation */}
           <nav className="hidden lg:block w-full lg:w-auto">
             <ul className="flex items-center justify-center lg:justify-start gap-4 md:gap-6 min-w-max text-xs md:text-sm font-medium tracking-[-0.5px]">
               {NAV_ITEMS.map((item) => (
@@ -189,7 +177,6 @@ export default function Header() {
             </ul>
           </nav>
 
-          {/* Search Bar */}
           <div className="w-full lg:w-[320px] relative">
             <input
               type="text"
