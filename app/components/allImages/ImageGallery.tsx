@@ -6,9 +6,11 @@ import { CLIENT_STORIES } from "@/app/constants";
 import { Loader2 } from "lucide-react";
 import PlayButton from "@/public/play-button.svg"; 
 import { Button } from "@/components/ui/button";
+import StoryModal from "./StoryModal";
 
 export default function ImageGallery() {
   const [visibleCount, setVisibleCount] = useState(16);
+  const [selectedStoryIndex, setSelectedStoryIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -34,14 +36,29 @@ export default function ImageGallery() {
     }, 600);
   };
 
+  const handlePrev = () => {
+    if (selectedStoryIndex === null) return;
+    setSelectedStoryIndex((prev) => 
+      prev !== null ? (prev === 0 ? stories.length - 1 : prev - 1) : null
+    );
+  };
+
+  const handleNext = () => {
+    if (selectedStoryIndex === null) return;
+    setSelectedStoryIndex((prev) => 
+      prev !== null ? (prev === stories.length - 1 ? 0 : prev + 1) : null
+    );
+  };
+
   return (
-    <section className="w-full my-16 my:pb-24 bg-white">
-      <div className="lg:max-w-7xl mx-auto px-4 md:px-8 py-16">
+    <section className="w-full my-16 pb-16 lg:pb-24 bg-white">
+      <div className="lg:max-w-7xl mx-auto px-4 md:px-8">
         {/* Gallery Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-          {visibleStories.map((story) => (
+          {visibleStories.map((story, index) => (
             <div 
               key={story.id} 
+              onClick={() => setSelectedStoryIndex(index)}
               className="relative aspect-4/5 w-full rounded-2xl overflow-hidden group cursor-pointer bg-gray-100"
             >
               <Image
@@ -77,6 +94,16 @@ export default function ImageGallery() {
             </Button>
           </div>
         )}
+
+        <StoryModal 
+          isOpen={selectedStoryIndex !== null}
+          onClose={() => setSelectedStoryIndex(null)}
+          story={selectedStoryIndex !== null ? stories[selectedStoryIndex] : null}
+          onNext={handleNext}
+          onPrev={handlePrev}
+          currentIndex={selectedStoryIndex ?? 0}
+          totalStories={stories.length}
+        />
       </div>
     </section>
   );

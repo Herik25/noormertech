@@ -27,24 +27,22 @@ export const CLIENT_STORIES = [
       src: "/clients/client-story-1.png",
       alt: "Kelsey Ahronson unboxing",
     },
-
     client: {
       name: "Kelsey Ahronson",
       subtitle: "IFBB 2024, Florida Winner",
     },
-
     quote: {
       title: "Choosing healthy lifestyle",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Preparing for my first show transformed my relationship with food and fitness. It wasn't just about the trophy; it was about reclaiming my health.",
     },
-
     product: {
       id: "custom-pink-figure-suit",
       name: "Custom Pink Figure Suit",
       image: "/products/custom-pink-figure-suit.png",
       href: "/product/custom-pink-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -56,12 +54,12 @@ export const CLIENT_STORIES = [
     },
     client: {
       name: "Gissele Quezadq",
-      subtitle: "IFBB 2024, Florida Winner",
+      subtitle: "NPC 2023, National Qualifier",
     },
     quote: {
       title: "Became a coach",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "After winning my regionals, I realized my passion was teaching others. Now I coach aspiring bikini athletes to find their confidence on stage.",
     },
     product: {
       id: "custom-purple-bikini-suit",
@@ -69,6 +67,7 @@ export const CLIENT_STORIES = [
       image: "/products/custom-purple-bikini-suit.png",
       href: "/product/custom-purple-bikini-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -79,13 +78,13 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Sarah",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Sarah Jenkins",
+      subtitle: "WBFF Pro Diva",
     },
     quote: {
       title: "Balancing motherhood",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Training for a show while raising twins taught me incredible time management. I want to show other moms that you don't have to give up your dreams.",
     },
     product: {
       id: "custom-green-wellness-suit",
@@ -93,6 +92,7 @@ export const CLIENT_STORIES = [
       image: "/products/custom-green-wellness-suit.png",
       href: "/product/custom-green-wellness-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -103,20 +103,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Maria Rodriguez",
+      subtitle: "Ms. Olympia Amateur 2024",
     },
     quote: {
       title: "Confidence on stage",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "The moment I stepped on stage in my custom suit, all the doubt vanished. I felt powerful, beautiful, and ready to conquer the world.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -127,20 +128,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Emily Clark",
+      subtitle: "PCA 2024, Overall Champion",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Overcoming injury",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "A back injury almost ended my career. This prep was my comeback story, proving to myself that resilience is the strongest muscle we have.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -150,24 +152,22 @@ export const CLIENT_STORIES = [
       src: "/clients/client-story-6.png",
       alt: "Kelsey Ahronson unboxing",
     },
-
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Jessica Lee",
+      subtitle: "OCB 2023, Bikini Pro",
     },
-
     quote: {
-      title: "Choosing healthy lifestyle",
+      title: "The sparkle detail",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "I was blown away by the craftsmanship. Every stone was placed perfectly. It wasn't just a suit; it was a piece of art that completed my package.",
     },
-
     product: {
       id: "custom-pink-figure-suit",
       name: "Custom Pink Figure Suit",
       image: "/products/product-1.png",
       href: "/product/custom-pink-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -178,20 +178,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Gissele Quezadq",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Amanda Thorne",
+      subtitle: "NPC 2024, First Callout",
     },
     quote: {
-      title: "Became a coach",
+      title: "First time nerves",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "I was terrified backstage, but looking down at my suit remind me of the hard work I put in. It gave me the armor I needed to shine.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -202,20 +203,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Sarah",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Rachel Green",
+      subtitle: "IFBB Wellness Pro",
     },
     quote: {
-      title: "Balancing motherhood",
+      title: "Defining success",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Winning shows is great, but the discipline I learned during prep has bled into my business and personal life. That is the true victory.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -226,20 +228,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Sophie Turner",
+      subtitle: "UKBFF 2023, Champion",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Travel and compete",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Traveling internationally for shows is stressful, but having a suit I could trust to fit perfectly made all the difference in my confidence.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -250,23 +253,24 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Olivia Martinez",
+      subtitle: "NPC Texas, Figure Overall",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "From fat loss to stage",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "I started this journey just to lose weight. Two years later, I'm holding an overall sword. Never underestimate what consistency can do.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
-   {
+  {
     id: 11,
     media: {
       type: "image",
@@ -274,23 +278,24 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Chloe Kim",
+      subtitle: "NABBA 2024, Toned Figure",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Finding my tribe",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "The best part wasn't the placing, but the sisterhood backstage. We helped each other glue suits and pump up. Friends for life.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
-   {
+  {
     id: 12,
     media: {
       type: "image",
@@ -298,23 +303,24 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Natalie Portman",
+      subtitle: "IFBB Pro Qualifier",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Precision fit",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "I have a difficult structure to fit, but this custom cut accentuated my X-frame perfectly. I've never felt more symmetrical.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
-   {
+  {
     id: 13,
     media: {
       type: "image",
@@ -322,23 +328,24 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Isabella Rossi",
+      subtitle: "San Marino Pro 2023",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "European tour",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Competing across Europe is exhausting, but my suit held up through every tan layer and every flight. Quality you can rely on.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
-   {
+  {
     id: 14,
     media: {
       type: "image",
@@ -346,20 +353,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Zoe Chen",
+      subtitle: "Asian Grand Prix Winner",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Cultural pride",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "I requested a specific color to honor my heritage, and they matched it perfectly. Representing where I come from meant everything to me.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -370,20 +378,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Hannah Baker",
+      subtitle: "NPC Junior Nationals",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Youngest in class",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Being the youngest on stage was intimidating. But once the lights hit my suit, I felt like a veteran. I ended up taking home 2nd place!",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -394,20 +403,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Victoria Hall",
+      subtitle: "Masters Bikini Champion",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Age is just a number",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Starting at 45, I thought I was too old. This sport proved me wrong. I'm in the best shape of my life and just getting started.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -418,20 +428,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Danielle Rose",
+      subtitle: "Fitness Model Universe",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Photoshoot ready",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "I bought this for a show but used it for my cover shoot too. It photographs beautifully and the color pops against any background.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
   {
@@ -442,20 +453,21 @@ export const CLIENT_STORIES = [
       alt: "Competition Suit",
     },
     client: {
-      name: "Kelsey Ahronson",
-      subtitle: "IFBB 2024, Florida Winner",
+      name: "Morgan Stark",
+      subtitle: "Arnold Amateur 2024",
     },
     quote: {
-      title: "Confidence on stage",
+      title: "Dream come true",
       description:
-        "Placement text, to place everywhere. Please change it later according to the context it is kept around.",
+        "Stepping on the Arnold stage was a lifelong dream. Doing it in a suit that made me feel like a superhero was the cherry on top.",
     },
     product: {
       id: "black-pro-figure-suit",
       name: "Black Pro Figure Suit",
-      image: "/images/products/black-figure-suit.png",
+      image: "/products/custom-pink-figure-suit.png",
       href: "/product/black-pro-figure-suit",
       cta: "View Product",
+      productPreview: "/products/product-preview.png",
     },
   },
 ];
