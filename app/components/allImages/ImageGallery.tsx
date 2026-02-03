@@ -7,6 +7,7 @@ import { Loader2 } from "lucide-react";
 import PlayButton from "@/public/play-button.svg"; 
 import { Button } from "@/components/ui/button";
 import StoryModal from "./StoryModal";
+import MobileStoryCard from "./MobileStoryCard";
 
 export default function ImageGallery() {
   const [visibleCount, setVisibleCount] = useState(16);
@@ -15,7 +16,7 @@ export default function ImageGallery() {
   useEffect(() => {
     const timer = setTimeout(() => {
       if (window.innerWidth < 768) {
-        setVisibleCount(8);
+        setVisibleCount(3);
       }
     }, 0);
     
@@ -38,9 +39,8 @@ export default function ImageGallery() {
 
   return (
     <section className="w-full my-16 pb-16 lg:pb-24 bg-white">
-      <div className="lg:max-w-7xl mx-auto px-4 md:px-8">
-        {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+      <div className="lg:max-w-7xl mx-auto sm:px-4 md:px-8">
+        <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
           {visibleStories.map((story, index) => (
             <div 
               key={story.id} 
@@ -64,6 +64,16 @@ export default function ImageGallery() {
               </div>}
             </div>
           ))}
+        </div>
+
+        <div className="block sm:hidden pt-16">
+           {visibleStories.map((story, index) => (
+             <MobileStoryCard 
+               key={story.id} 
+               story={story} 
+               showSeparator={!(index === visibleStories.length - 1 && hasMore)}
+             />
+           ))}
         </div>
 
         {/* Load More Button */}

@@ -50,7 +50,7 @@ export default function StorySection() {
             className="md:border border-primary text-black hover:bg-primary hover:text-white rounded-[8px] px-4 py-3 text-base font-medium transition-colors tracking-[-0.5px]"
           >
             <Link href="#">
-              Share your story with us
+              Share your story
             </Link>
           </Button>
 
