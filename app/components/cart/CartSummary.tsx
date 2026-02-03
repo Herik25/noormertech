@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 interface CartSummaryProps {
   subtotal: number;
@@ -109,9 +110,12 @@ export default function CartSummary({
         </div>
 
         <Button 
+           asChild
            className="w-full mt-2 md:mt-4 lg:mt-6 h-12 bg-primary border border-primary hover:bg-white text-white hover:text-primary text-base font-semibold rounded-full cursor-pointer"
         >
-          Checkout
+            <Link href="/checkout">
+                Checkout
+            </Link>
         </Button>
       </div>
     </div>
